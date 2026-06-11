@@ -1,0 +1,47 @@
+
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ストレスチェック</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/style.css" />
+  <link rel="stylesheet" href="./assets/print.css" media="print" />
+</head>
+<body>
+  <main class="app-shell">
+    <section class="card consent" id="consent-card">
+      <h1>ストレスチェック</h1>
+      <p>このチェックは、あなたの現在のストレス状態を把握するためのものです。個人情報は保存されません。</p>
+      <p class="note">回答時間の目安は 5〜10 分です。</p>
+      <label class="checkbox-row">
+        <input type="checkbox" id="consent-check" />
+        <span>内容を確認し、回答を開始します</span>
+      </label>
+      <button class="primary" id="start-button" disabled>回答を開始する</button>
+      <p class="error" id="start-error" hidden></p>
+    </section>
+
+    <section class="card survey" id="survey-card" hidden>
+      <div class="survey-header">
+        <h2 id="survey-title">質問</h2>
+        <div class="progress-wrap">
+          <div class="progress-meta"><span id="step-label"></span><span id="progress-percent"></span></div>
+          <div class="progress-bar"><span id="progress-fill"></span></div>
+        </div>
+      </div>
+      <form id="survey-form"></form>
+      <div class="actions">
+        <button type="button" class="secondary" id="prev-button">戻る</button>
+        <button type="button" class="primary" id="next-button">次へ</button>
+      </div>
+      <p class="error" id="survey-error" hidden></p>
+    </section>
+    <p class="back-warning" id="back-warning" hidden>回答中です。ブラウザの戻るボタンを使うと入力内容が失われる可能性があります。前の設問へ戻る場合は画面内の「戻る」ボタンを使ってください。</p>
+  </main>
+  <script src="./assets/app.js"></script>
+</body>
+</html>

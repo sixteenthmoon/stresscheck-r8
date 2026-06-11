@@ -1,0 +1,30 @@
+
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ストレスチェック結果</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/style.css" />
+  <link rel="stylesheet" href="./assets/print.css" media="print" />
+</head>
+<body>
+  <main class="app-shell result-shell">
+    <section class="card" id="result-card">
+      <h1>あなたのストレスチェック結果</h1>
+      <div id="result-summary"></div>
+      <div class="messages" id="result-messages"></div>
+      <div class="actions result-next-actions">
+        <button type="button" class="secondary" id="pdf-generate-button">PDFに保存</button>
+        <button type="button" class="primary" id="interview-request-button">専門家面談を希望</button>
+      </div>
+      <p class="note">URL を第三者に共有しないでください。</p>
+      <p class="error" id="result-error" hidden></p>
+    </section>
+  </main>
+  <script src="./assets/app.js"></script>
+</body>
+</html>

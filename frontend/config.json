@@ -1,0 +1,5 @@
+{
+  "frontend_base_path": "/st-check-r8",
+  "paused": false,
+  "pause_message": "現在受付を中止しています。"
+}

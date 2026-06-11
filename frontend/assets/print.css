@@ -1,0 +1,8 @@
+
+@page { size: A4; margin: 12mm; }
+body { background: #fff; color: #000; }
+.app-shell { max-width: none; padding: 0; }
+.card { box-shadow: none; border: 0; padding: 0; }
+button, .actions, #interview-request-button { display: none !important; }
+.note { color: #000; }
+.messages .message, .result-item { border-color: #999; }
